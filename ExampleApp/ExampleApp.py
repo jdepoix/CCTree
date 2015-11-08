@@ -3,7 +3,7 @@ import sys
 
 __author__ = 'Jonas'
 
-from CCTree import CCTree
+from CCTree.CCTree import CCTree
 
 
 def print_cctree_leafs(cctree):
@@ -38,6 +38,7 @@ def build_cctree_interactive(cctree):
 
     :param cctree: CCTree
     """
+    print('-------------------------------------------- INPUT ---------------------------------------------')
     print_cctree_leafs(cctree)
 
     while cctree.split_nodes():
