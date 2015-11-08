@@ -114,7 +114,7 @@ class Node(object):
 
         for p in occurrences:
             pj = occurrences[p]/total
-            h += pj * math.log(pj)
+            h += pj * math.log(pj, 2)
 
         return -h
 
