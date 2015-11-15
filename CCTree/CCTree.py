@@ -75,7 +75,7 @@ class Node(object):
         """
         returns the amount of data points
 
-        :return: length of the set of data pointss
+        :return: length of the set of data points
         """
         return len(self.data)
 
@@ -111,6 +111,8 @@ class Node(object):
                 occurrences[self.data[k][i]] += 1
             else:
                 occurrences[self.data[k][i]] = 1
+
+        total = float(total)
 
         for p in occurrences:
             pj = occurrences[p]/total
